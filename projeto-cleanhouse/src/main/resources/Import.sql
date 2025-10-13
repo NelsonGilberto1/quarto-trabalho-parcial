@@ -8,11 +8,11 @@ INSERT INTO Cliente (cpf,email,endereco,nome,telefone) VALUES ('567.891.234-10',
 
 #Empregada
 
-INSERT INTO Empregada (dataCadastro, dataNascimento, id, status, descricao, email, endereco, nome, telefone) VALUES ('2025-09-01 10:00:00', '1999-02-05','001', true, 'Empregada domestica especialisada em trabalhos pesados', 'AnaLuiza@gmail.com', 'Rua Anaconda numero 99', 'Ana Luiza', '273926273');
-INSERT INTO Empregada (dataCadastro, dataNascimento,status, descricao, email, endereco, nome, telefone) VALUES ('2025-08-21 10:00:00', '1988-12-25',false, 'Empregada especialisada em polimento', 'BiancaGames@gmail.com', 'Rua Besouro numero 02', 'Bianca Almeida', '328322038');
-INSERT INTO Empregada (dataCadastro, dataNascimento,status, descricao, email, endereco, nome, telefone) VALUES ('2025-03-22 10:00:00', '1998-08-29',true, 'jardineira proficional', 'CleideSilva@gmail.com', 'Rua Canguru numero 102', 'Cleide da Silva', '202303289');
-INSERT INTO Empregada (dataCadastro, dataNascimento,status, descricao, email, endereco, nome, telefone) VALUES ('2025-05-30 10:00:00', '1997-02-19',false, 'Cozinheira de restaurante', 'DaniFicada@gmail.com', 'Rua Doninha numero 72', 'Dani Ficada', '232092382');
-INSERT INTO Empregada (dataCadastro, dataNascimento,status, descricao, email, endereco, nome, telefone) VALUES ('2025-07-01 10:00:00', '1999-01-28',false, 'Empregada domestica especialisada em trabalhos pesados', 'EloisaMosk@gmail.com', 'Rua Elefante numero 23', 'Eloisa Souza', '9238i2038');
+INSERT INTO Empregada (dataCadastro, dataNascimento, id, sstatus, descricao, email, endereco, nome, telefone) VALUES ('2025-09-01 10:00:00', '1999-02-05','001', true, 'Empregada domestica especialisada em trabalhos pesados', 'AnaLuiza@gmail.com', 'Rua Anaconda numero 99', 'Ana Luiza', '273926273');
+INSERT INTO Empregada (dataCadastro, dataNascimento,sstatus, descricao, email, endereco, nome, telefone) VALUES ('2025-08-21 10:00:00', '1988-12-25',false, 'Empregada especialisada em polimento', 'BiancaGames@gmail.com', 'Rua Besouro numero 02', 'Bianca Almeida', '328322038');
+INSERT INTO Empregada (dataCadastro, dataNascimento,sstatus, descricao, email, endereco, nome, telefone) VALUES ('2025-03-22 10:00:00', '1998-08-29',true, 'jardineira proficional', 'CleideSilva@gmail.com', 'Rua Canguru numero 102', 'Cleide da Silva', '202303289');
+INSERT INTO Empregada (dataCadastro, dataNascimento,sstatus, descricao, email, endereco, nome, telefone) VALUES ('2025-05-30 10:00:00', '1997-02-19',false, 'Cozinheira de restaurante', 'DaniFicada@gmail.com', 'Rua Doninha numero 72', 'Dani Ficada', '232092382');
+INSERT INTO Empregada (dataCadastro, dataNascimento,sstatus, descricao, email, endereco, nome, telefone) VALUES ('2025-07-01 10:00:00', '1999-01-28',false, 'Empregada domestica especialisada em trabalhos pesados', 'EloisaMosk@gmail.com', 'Rua Elefante numero 23', 'Eloisa Souza', '9238i2038');
 
 
 #Avaliacao
@@ -24,11 +24,11 @@ INSERT INTO Avaliacao (dataAvaliacao,nota, comentarios) VALUES ('2025-01-27 09:5
 
 #Mensagem
 
-INSERT INTO Mensagem (dataMensagem,id,status,mensagem) VALUES ('2025-08-12 12:30:00','100',true,'Você consegue vir em casa hoje?');
-INSERT INTO Mensagem (dataMensagem,status,mensagem) VALUES ('2025-09-13 13:20:00',false,'Como funciona o pagamento?');
-INSERT INTO Mensagem (dataMensagem,status,mensagem) VALUES ('2025-07-11 14:22:00',true,'exelente trabalho!');
-INSERT INTO Mensagem (dataMensagem,status,mensagem) VALUES ('2025-02-06 16:45:00',false,'Um otimo app');
-INSERT INTO Mensagem (dataMensagem,status,mensagem) VALUES ('2025-01-22 09:21:00',true,'Você consegue vir em casa hoje?');
+INSERT INTO Mensagem (dataMensagem,id,sstatus,mensagem) VALUES ('2025-08-12 12:30:00','100',true,'Você consegue vir em casa hoje?');
+INSERT INTO Mensagem (dataMensagem,sstatus,mensagem) VALUES ('2025-09-13 13:20:00',false,'Como funciona o pagamento?');
+INSERT INTO Mensagem (dataMensagem,sstatus,mensagem) VALUES ('2025-07-11 14:22:00',true,'exelente trabalho!');
+INSERT INTO Mensagem (dataMensagem,sstatus,mensagem) VALUES ('2025-02-06 16:45:00',false,'Um otimo app');
+INSERT INTO Mensagem (dataMensagem,sstatus,mensagem) VALUES ('2025-01-22 09:21:00',true,'Você consegue vir em casa hoje?');
 
 #Trabalho
 INSERT INTO Trabalho (dataInicio, dataServico, horas,id,valor) VALUES ('2025-01-22 09:21:00','2025-01-22 16:10:00','7',1000,'120');
@@ -38,8 +38,8 @@ INSERT INTO Trabalho (dataInicio, dataServico, horas,valor) VALUES ('2025-04-16 
 INSERT INTO Trabalho (dataInicio, dataServico, horas,valor) VALUES ('2025-05-17 11:25:00','2025-05-17 18:14:00','7','110');
 
 #Pagamento
-INSERT INTO Pagamento (data,id,valor,comprovante,metodo) VALUES ('2025-01-22 09:21:00','10000','120','239209370327','Cartão');
-INSERT INTO Pagamento (data,valor,comprovante,metodo) VALUES ('2025-02-14 08:22:00','160','2037320323202','Pix');
-INSERT INTO Pagamento (data,valor,comprovante,metodo) VALUES ('2025-03-14 09:23:00','180','208303283280','Cartão');
-INSERT INTO Pagamento (data,valor,comprovante,metodo) VALUES ('2025-04-15 10:24:00','150','23892327823023','Pix');
-INSERT INTO Pagamento (data,valor,comprovante,metodo) VALUES ('2025-05-16 11:25:00','110','23032723702320','Cartão');
+INSERT INTO Pagamento (datas,id,valor,comprovante,metodo) VALUES ('2025-01-22 09:21:00','10000','120','239209370327','Cartão');
+INSERT INTO Pagamento (datas,valor,comprovante,metodo) VALUES ('2025-02-14 08:22:00','160','2037320323202','Pix');
+INSERT INTO Pagamento (datas,valor,comprovante,metodo) VALUES ('2025-03-14 09:23:00','180','208303283280','Cartão');
+INSERT INTO Pagamento (datas,valor,comprovante,metodo) VALUES ('2025-04-15 10:24:00','150','23892327823023','Pix');
+INSERT INTO Pagamento (datas,valor,comprovante,metodo) VALUES ('2025-05-16 11:25:00','110','23032723702320','Cartão');

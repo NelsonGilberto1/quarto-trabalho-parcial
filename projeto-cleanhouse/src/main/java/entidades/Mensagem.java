@@ -15,7 +15,7 @@ public class Mensagem {
     public Integer id;
     public String mensagem;
     public LocalDate dataMensagem;
-    public Boolean status;
+    public Boolean sstatus;
     @ManyToOne
     public Cliente cliente;
     @ManyToOne

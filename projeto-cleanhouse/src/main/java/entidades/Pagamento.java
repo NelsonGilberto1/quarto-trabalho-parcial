@@ -15,7 +15,7 @@ public class Pagamento {
     public Integer id;
     public Double valor;
     public String metodo;
-    public LocalDate data;
+    public LocalDate datas;
     public String comprovante;
     @ManyToOne
     public Trabalho trabalho;

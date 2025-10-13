@@ -19,5 +19,5 @@ public class Empregada {
     public String descricao;
     public LocalDate dataNascimento;
     public LocalDate dataCadastro;
-    public Boolean status;
+    public Boolean sstatus;
 }
