@@ -16,7 +16,29 @@ INSERT INTO Empregada (dataCadastro, dataNascimento,status, descricao, email, en
 
 
 --Avaliacao--
+INSERT INTO Avaliacao (dataAvaliacao, id, nota, comentarios) VALUES ('2025-07-01 10:00:00','10','8','Muito boa é educada ');
+INSERT INTO Avaliacao (dataAvaliacao,nota, comentarios) VALUES ('2025-08-12 12:30:00','2','Muito boa é educada ');
+INSERT INTO Avaliacao (dataAvaliacao,nota, comentarios) VALUES ('2025-06-21 10:37:00','7','muito aceitavel ');
+INSERT INTO Avaliacao (dataAvaliacao,nota, comentarios) VALUES ('2025-02-17 10:43:00','10','exelente muito proficional ');
+INSERT INTO Avaliacao (dataAvaliacao,nota, comentarios) VALUES ('2025-01-27 09:52:00','3','Chegou muito atrazada ');
 
+--Mensagem--
+INSERT INTO Mensagem (dataMensagem,id,status,mensagem) VALUES ('2025-08-12 12:30:00','100',true,'Você consegue vir em casa hoje?');
+INSERT INTO Mensagem (dataMensagem,status,mensagem) VALUES ('2025-09-13 13:20:00',false,'Como funciona o pagamento?');
+INSERT INTO Mensagem (dataMensagem,status,mensagem) VALUES ('2025-07-11 14:22:00',true,'exelente trabalho!');
+INSERT INTO Mensagem (dataMensagem,status,mensagem) VALUES ('2025-02-06 16:45:00',false,'Um otimo app');
+INSERT INTO Mensagem (dataMensagem,status,mensagem) VALUES ('2025-01-22 09:21:00',true,'Você consegue vir em casa hoje?');
 
+--Trabalho--
+INSERT INTO Trabalho (dataInicio, dataServico, horas,id,valor) VALUES ('2025-01-22 09:21:00','2025-01-22 16:10:00','7',1000,'120');
+INSERT INTO Trabalho (dataInicio, dataServico, horas,valor) VALUES ('2025-02-12 08:22:00','2025-02-12 15:11:00','7','160');
+INSERT INTO Trabalho (dataInicio, dataServico, horas,valor) VALUES ('2025-03-15 09:23:00','2025-03-15 16:12:00','7','180');
+INSERT INTO Trabalho (dataInicio, dataServico, horas,valor) VALUES ('2025-04-16 10:24:00','2025-04-16 17:13:00','7','150');
+INSERT INTO Trabalho (dataInicio, dataServico, horas,valor) VALUES ('2025-05-17 11:25:00','2025-05-17 18:14:00','7','110');
 
-
+--Pagamento--
+INSERT INTO Pagamento (data,id,valor,comprovante,metodo) VALUES ('2025-01-22 09:21:00','10000','120','239209370327','Cartão');
+INSERT INTO Pagamento (data,valor,comprovante,metodo) VALUES ('2025-02-14 08:22:00','160','2037320323202','Pix');
+INSERT INTO Pagamento (data,valor,comprovante,metodo) VALUES ('2025-03-14 09:23:00','180','208303283280','Cartão');
+INSERT INTO Pagamento (data,valor,comprovante,metodo) VALUES ('2025-04-15 10:24:00','150','23892327823023','Pix');
+INSERT INTO Pagamento (data,valor,comprovante,metodo) VALUES ('2025-05-16 11:25:00','110','23032723702320','Cartão');
